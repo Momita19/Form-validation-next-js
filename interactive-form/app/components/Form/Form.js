@@ -77,6 +77,14 @@ const Form = () => {
       // Validation failed, do not submit
       return;
     }
+    setFormData({
+      name: '',
+      email: '',
+      area: '',
+      propertyType: '',
+      phoneNumber: '',
+      alternativeNumber: '',
+    });
 
     // Data submission to Google Sheets and database can be implemented here
 

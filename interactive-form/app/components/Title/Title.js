@@ -1,6 +1,8 @@
 import React from 'react'
 import Styles from './title.module.css'
+
 const Title = () => {
+
   return (
     <div className={Styles.container}>
     <header className={Styles.header}>

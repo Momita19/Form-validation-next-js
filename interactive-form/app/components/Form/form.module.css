@@ -40,23 +40,25 @@
   border-radius: 4px;
   font-size: 16px;
   outline: none;
-  
+
 }
-.input{
-  box-sizing: border-box  ;
+
+.input {
+  box-sizing: border-box;
   padding: 0.4rem;
   border-radius: 4px;
 }
+
 .errorMessage {
   color: red !important;
   margin: 0em;
- font-weight: 500;  
+  font-weight: 500;
 }
-.option{
+
+.option {
   font-weight: 50em;
 }
 
-/* Submit button styling */
 .button[type="submit"] {
   transition: all .5s ease;
   background-color: transparent;
@@ -120,9 +122,9 @@
 
 
 .forms {
-  background: rgba(51, 44, 140,0.4);
-  padding:2.5rem 0.625rem;
-  border-radius:0.25rem;
+  background: rgba(51, 44, 140, 0.4);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
 }
 
 
