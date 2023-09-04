@@ -253,23 +253,6 @@ const Form = () => {
           onChange={handleChange}
           error={errors.locationPin}
         />
-        {/* <FormField
-          className={Styles.formElement}
-          label="Image"
-          name="image"
-          type="file" // Set the input type to file
-          onChange={handleImageChange} // Handle file input changes
-          error={errors.image}
-        /> */}
-        {/* Display a preview of the selected image if available */}
-{/* {selectedImage && (
-  <div className={Styles.imagePreview}>
-    <img src={URL.createObjectURL(selectedImage)} alt="Selected" />
-  </div>
-)} */}
-        {/* <div className={Styles.buttonParent}>
-          <button className={Styles.button} type="submit">Submit</button>
-        </div> */}
         <div className={Styles.buttonParent}>
           <button className={`${Styles.button} ${Styles.buttonAnimated}`} type="submit">
             Submit

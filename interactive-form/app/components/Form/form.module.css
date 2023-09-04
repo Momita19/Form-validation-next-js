@@ -6,7 +6,7 @@
 
 .forms {
   
-  background: rgba(202, 201, 214, 0.4);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2.5rem 7rem; 
   border-radius: 0.25rem;
   align-items: center;
@@ -62,7 +62,7 @@
 
 }
 .container:hover{
-  transform:scale(1.1)
+  transform:scale(1.05 )
 }
 
 .formElement input,
@@ -92,19 +92,7 @@
   border-color: #007BFF; /* Change border color on focus */
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add a box shadow on focus */
   transform: scale(1.02); /* Add a subtle scaling effect on focus */
-}
-
-
-/* .input {
-  box-sizing: border-box;
-  padding: 0.4rem;
-  border-radius: 4px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.input:focus{
-  border-color: #007BFF; /* Change the border color on focus */
-  /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); } */
-
+} 
 .errorMessage {
   color: red !important;
   margin: 0em;
@@ -149,7 +137,7 @@
     font-size: 1.5rem;
 }
   .forms{
-    background: rgba(202, 201, 214, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
       padding: 1.5rem 8rem;
       border-radius: 0.25rem;
       color: rgb(33, 38, 40);
