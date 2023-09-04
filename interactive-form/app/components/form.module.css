@@ -1,0 +1,171 @@
+.formElement label {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+}
+
+.forms {
+  background: rgba(51, 44, 140, 0.4);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  align-items: center;
+  display: grid;
+}
+
+.buttonParent {
+  display: grid;
+  align-items: center;
+  padding-left: inherit;
+  padding-right: inherit;
+  padding-top: 1rem;
+
+}
+
+.button {
+  border: none;
+}
+
+
+
+.container {
+  margin: 2rem auto 0 auto;
+
+}
+
+.formElement input,
+.formElement select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  
+}
+.input{
+  box-sizing: border-box  ;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+.errorMessage {
+  color: red !important;
+  margin: 0em;
+ font-weight: 500;  
+}
+.option{
+  font-weight: 50em;
+}
+
+/* Submit button styling */
+.button[type="submit"] {
+  transition: all .5s ease;
+  background-color: transparent;
+  color: #fff;
+  padding: 6.9px 15px;
+  border: 3px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* media queries*/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.clue {
+  font-size: 0.9rem;
+  color: #e4e4e4;
+  margin-left: 0.25rem;
+}
+
+
+/* form */
+@media (min-width: 480px) {
+  .forms {
+    padding: 2.5rem;
+  }
+}
+
+
+
+.forms {
+  background: rgba(51, 44, 140,0.4);
+  padding:2.5rem 0.625rem;
+  border-radius:0.25rem;
+}
+
+
+
+.formElement {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+
+}
+
+
+/* drop down*/
+.formControl {
+  width: 100%;
+  font-family: inherit;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 0.625rem;
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+
+
+}
+
+.inputTextarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #37B62B;
+  color: #ffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
