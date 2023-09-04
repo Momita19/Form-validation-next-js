@@ -10,7 +10,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   background-image:url('/img.jpg');
-  background-repeat:repeat-x repeat-y;
+  background-repeat:no-repeat;
   background-size:cover;
   font-size: 1rem;
   font-weight: 400;
