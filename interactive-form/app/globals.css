@@ -9,13 +9,13 @@
 }
 body{
   font-family: 'Open Sans', sans-serif;
-  background-image:url('/img.jpg');
+  background-image:url('/image.jpg');
   background-repeat:no-repeat;
   background-size:cover;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  color: #f3f3f3;
+  color: #141212;
   margin: 0;
   padding:0;
 } 

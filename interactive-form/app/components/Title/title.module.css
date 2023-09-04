@@ -7,11 +7,53 @@
 .text {
     font-weight:600;
     line-height:1.2;
-    color: cornflowerblue;
+    color: rgb(33, 34, 37);
     font-size:2.3rem;
   }
+  /* typing-animation.css */
+.textContainer {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 0%; /* Round shape */
+            padding: 2px; /* Padding inside the round box */
+            text-align: center;
+            overflow: hidden;
+}
+.header{
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 1.5rem;
+}
+
+#text {
+  color: rgb(33, 34, 37);
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0; /* Remove default margin */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden;
+            justify-content:center;
+}
+@media (min-width: 700px) and (max-width: 1200px){
+    #text{
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      font-size: 1.5rem;
+    }
+  
+}
   @media (min-width: 200px) {
-    .text{
-        font-size:2.3rem;
+    #text{
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      font-size: 1.5rem;
+    }
+    .header{
+      align-items: center;
+      justify-content: center;
+      display: inline-flex;
+      font-size: 1.5rem;
     }
   }

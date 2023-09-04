@@ -1,12 +1,12 @@
 import React from 'react';
 import Styles from './form.module.css'
 
-const Dropdown = ({ label, name, options, value, onChange, error }) => {
+const Dropdown = ({ label, name, options,placeholder, value, onChange, error }) => {
   return (
     <div>
       <label>
         {label}:
-        <select className={Styles.input} name={name} value={value} onChange={onChange}>
+        <select className={Styles.input} name={name} placeholder={placeholder} value={value} onChange={onChange}>
           <option  value="">Select an option</option>
           {options.map((option, index) => (
             <option key={index} value={option}>

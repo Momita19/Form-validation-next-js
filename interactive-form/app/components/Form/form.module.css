@@ -5,11 +5,32 @@
 }
 
 .forms {
-  background: rgba(51, 44, 140, 0.4);
-  padding: 2.5rem 0.625rem;
+  
+  background: rgba(202, 201, 214, 0.4);
+  padding: 2.5rem 7rem; 
   border-radius: 0.25rem;
   align-items: center;
   display: grid;
+
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: row !important;
+  /* Horizontal layout */
+}
+
+.element {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.checkboxGroup label {
+  margin-right: 10px;
+  transition: background-color 0.3s ease; /* Add a transition for background-color */
+}
+.checkboxGroup label:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
 }
 
 .buttonParent {
@@ -23,13 +44,25 @@
 
 .button {
   border: none;
+  font-size: 1.4rem;
+}
+.buttonAnimated {
+  transition: transform 0.3s ease; /* Animation properties (adjust duration and timing function as needed) */
+}
+
+.buttonAnimated:hover {
+  transform: scale(1.1); /* Adjust the scaling factor for the animation */
 }
 
 
 
 .container {
-  margin: 2rem auto 0 auto;
+  margin: 2rem 25rem 0 25rem;
+  transition: all 0.3s ease;
 
+}
+.container:hover{
+  transform:scale(1.1)
 }
 
 .formElement input,
@@ -42,12 +75,35 @@
   outline: none;
 
 }
-
+/* Base styles for input elements */
 .input {
+  width: 100%;
+  margin-top:0.4rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Styles for when input elements are focused */
+.input:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add a box shadow on focus */
+  transform: scale(1.02); /* Add a subtle scaling effect on focus */
+}
+
+
+/* .input {
   box-sizing: border-box;
   padding: 0.4rem;
   border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+.input:focus{
+  border-color: #007BFF; /* Change the border color on focus */
+  /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); } */
 
 .errorMessage {
   color: red !important;
@@ -62,28 +118,52 @@
 .button[type="submit"] {
   transition: all .5s ease;
   background-color: transparent;
-  color: #fff;
+  transition: transform 0.3s ease;
+  color: rgb(33, 34, 37);
   padding: 6.9px 15px;
-  border: 3px solid white;
+  border: 3px solid rgb(54, 62, 149);
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1.4rem;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button[type="submit"]:hover {
   background-color: #0056b3;
+  transform: scale(1.1);
 }
-
-/* media queries*/
-@media (min-width: 576px) {
+#title {
+  font-size: 1rem; /* Adjust the font size as needed */
+  color: #333; /* Set the text color */
+  margin-bottom: 1rem; /* Add margin to separate it from other elements */
+}
+@media (min-width: 1064px) and (max-width:1500px) {
   .container {
-    max-width: 540px;
+    margin: 2rem 15rem 0 15rem;
+  
   }
+  #title{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 1.5rem;
 }
+  .forms{
+    background: rgba(202, 201, 214, 0.4);
+      padding: 1.5rem 8rem;
+      border-radius: 0.25rem;
+      color: rgb(33, 38, 40);
+      position: relative;
+      align-items: center;
+      display: grid;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px; /* Rounded corners */
+  color: #212628;
+  }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+  .checkboxGroup {
+    flex-direction: column;
+    /* Vertical layout */
   }
 }
 
@@ -113,20 +193,38 @@
 
 
 /* form */
-@media (min-width: 480px) {
+@media (min-width: 480px) and (max-width:1063px) {
+  
+  .container {
+  margin: 2rem 8rem 0 8rem;
+
+}
+  .forms {
+      padding: 6rem;
+      display: inherit;
+  }
+  h1 #title{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 1rem;
+}
+}
+@media (min-width: 200px) and (max-width:479px) {
+  .container {
+  margin: 2rem auto 0 auto;
+
+}
   .forms {
     padding: 2.5rem;
   }
+  #title{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 1.5rem;
 }
-
-
-
-.forms {
-  background: rgba(51, 44, 140, 0.4);
-  padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem;
 }
-
 
 
 .formElement {
@@ -167,7 +265,7 @@
   width: 100%;
   padding: 0.75rem;
   background: #37B62B;
-  color: #ffff;
+  color: #2b6eaa;
   border-radius: 2px;
   cursor: pointer;
 }
